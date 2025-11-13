@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Instrucción Mi-17 SHP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Panel de Instrucción del Helicóptero Mi-17 SHP</h1>
+
+  <div class="panel-container">
+    <img src="11.jpeg" usemap="#panel11" class="panel-img" alt="Panel 11">
+    <img src="12.jpeg" usemap="#panel12" class="panel-img" alt="Panel 12">
+    <img src="13.jpeg" usemap="#panel13" class="panel-img" alt="Panel 13">
+  </div>
+
+  <!-- MAPAS INTERACTIVOS -->
+
+  <!-- Panel 100 -->
+  <map name="panel11">
+    <area shape="circle" coords="120,180,60" onclick="mostrarNumero(30)" alt="30">
+    <area shape="circle" coords="350,100,60" onclick="mostrarNumero(31)" alt="31">
+    <area shape="circle" coords="300,260,90" onclick="mostrarNumero(33)" alt="33">
+    <area shape="circle" coords="460,260,70" onclick="mostrarNumero(34)" alt="34">
+    <area shape="circle" coords="580,220,70" onclick="mostrarNumero(35)" alt="35">
+    <area shape="circle" coords="130,370,80" onclick="mostrarNumero(36)" alt="36">
+    <area shape="circle" coords="150,470,60" onclick="mostrarNumero(37)" alt="37">
+    <area shape="circle" coords="300,450,70" onclick="mostrarNumero(38)" alt="38">
+    <area shape="circle" coords="420,470,90" onclick="mostrarNumero(39)" alt="39">
+    <area shape="rect" coords="520,520,640,640" onclick="mostrarNumero(40)" alt="40">
+    <area shape="circle" coords="580,360,80" onclick="mostrarNumero(41)" alt="41">
+    <area shape="circle" coords="580,500,60" onclick="mostrarNumero(42)" alt="42">
+  </map>
+
+  <!-- Panel 101 -->
+  <map name="panel12">
+    <area shape="rect" coords="50,250,120,320" onclick="mostrarNumero(2)" alt="2">
+    <area shape="circle" coords="200,270,70" onclick="mostrarNumero(3)" alt="3">
+    <area shape="circle" coords="120,170,60" onclick="mostrarNumero(4)" alt="4">
+    <area shape="circle" coords="310,350,70" onclick="mostrarNumero(5)" alt="5">
+    <area shape="circle" coords="200,180,70" onclick="mostrarNumero(6)" alt="6">
+    <area shape="circle" coords="330,100,70" onclick="mostrarNumero(7)" alt="7">
+    <area shape="circle" coords="330,50,60" onclick="mostrarNumero(8)" alt="8">
+    <area shape="circle" coords="450,80,70" onclick="mostrarNumero(9)" alt="9">
+    <area shape="circle" coords="420,400,70" onclick="mostrarNumero(10)" alt="10">
+    <area shape="circle" coords="560,80,90" onclick="mostrarNumero(11)" alt="11">
+    <area shape="circle" coords="560,250,70" onclick="mostrarNumero(12)" alt="12">
+    <area shape="rect" coords="220,500,360,540" onclick="mostrarNumero(13)" alt="13">
+    <area shape="rect" coords="100,500,200,540" onclick="mostrarNumero(14)" alt="14">
+    <area shape="rect" coords="0,250,70,470" onclick="mostrarNumero(15)" alt="15">
+    <area shape="circle" coords="420,250,100" onclick="mostrarNumero(16)" alt="16">
+  </map>
+
+  <!-- Panel 102 -->
+  <map name="panel13">
+    <area shape="circle" coords="120,120,80" onclick="mostrarNumero(20)" alt="20">
+    <area shape="circle" coords="220,120,70" onclick="mostrarNumero(21)" alt="21">
+    <area shape="circle" coords="340,120,80" onclick="mostrarNumero(22)" alt="22">
+    <area shape="circle" coords="460,120,80" onclick="mostrarNumero(23)" alt="23">
+    <area shape="rect" coords="100,230,260,300" onclick="mostrarNumero(24)" alt="24">
+    <area shape="rect" coords="100,310,420,440" onclick="mostrarNumero(25)" alt="25">
+    <area shape="rect" coords="440,240,500,400" onclick="mostrarNumero(26)" alt="26">
+    <area shape="rect" coords="520,240,600,310" onclick="mostrarNumero(27)" alt="27">
+    <area shape="rect" coords="420,420,520,520" onclick="mostrarNumero(28)" alt="28">
+    <area shape="rect" coords="100,460,420,520" onclick="mostrarNumero(29)" alt="29">
+    <area shape="rect" coords="540,350,620,520" onclick="mostrarNumero(30)" alt="30">
+  </map>
+
+  <div id="resultado">Haz clic en un número del panel</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
